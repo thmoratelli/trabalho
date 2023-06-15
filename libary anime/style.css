@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    position: relative;
+}
+.l_layout{
+    max-width: 1500px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+header .navbar_header{
+    display: flex;
+
+    align-items: center;
+    padding: 80px 0;
+}
+header .navbar_brand img{
+    width: 100px;
+    margin-right: 64px;
+}
+header .navbar .navbar_ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+}
+header .navbar .navbar_ul li{
+    box-sizing: border-box;
+    width: 120px;
+    padding-right: 40px;
+ 
+}
+header .navbar .navbar_ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family:sans-serif;
+    letter-spacing: .025em;
+ 
+    position: relative;
+    display: inline-block;
+    padding-bottom: 16px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar_container{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+.Frame_frame .Frame_border{
+    position: fixed;
+    z-index: 400;
+    background-color: #000;
+    transition: ease .5s cubic-bezier(.23,1,.32,1);
+    
+}
+.Frame_frame .Frame_border:nth-child(1){
+    transform: scaleX(1);
+    top: 0;
+    right: 0;
+    transform-origin: center right;
+    width: 10px;
+    height: 100vh;
+}
+
+.Frame_frame .Frame_border:nth-child(2){
+    transform: scaleX(1);
+    top: 0;
+    left: 0;
+    transform-origin: center left;
+    width: 10px;
+    height: 100vh;
+}
+.Frame_frame .Frame_border:nth-child(3){
+    transform: scaleX(1);
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom center;
+    width: 100vw;
+    height: 10px;
+}
+.Frame_frame .Frame_border:last-child{
+    transform: scaleX(1);
+    top: 0;
+    left: 0;
+    transform-origin: center top;
+    width: 100vw;
+    height: 10px;
+}
+
+
+.container_title_home{
+    position: relative;
+    width: 100%;
+    background-color: red;
+}
+
+.title_home{
+    position: absolute;
+    top: -135px;
+    z-index: 55;
+    padding: 10px;
+    right:100px;
+    font-size: 86px;
+    text-align: end;
+
+}
+.title_home strong{
+    background-color: white;
+    padding: 10px;
+}
+
+/*Slider Infinito*/
+
+    
+  
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0 144px;
+  }
+  
+  .slider {
+    display: flex;
+    animation: slide 15s linear infinite;
+    animation-fill-mode: forwards;
+  }
+
+  .card-slider {
+    flex: 0 0 400px;
+    height: 565px;
+    margin-right: 10px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .card-slider img{
+    width: 400px;
+    height: 565px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+
+  }
+  
+.title_list_search{
+    position: relative;
+    margin-bottom: 10px;
+}
+.title_list_search h1{
+    font-size: 60px;
+    
+}
+.container_list_animes{
+   margin-bottom:144px;
+}
+
+.service_img img{
+    width: 800px;
+}
+.container_content_service{
+    margin-left: 96px;
+
+}
+.service_txt{
+    width: 100%;
+
+}
+
+.sub_title_service{
+    font-size: 16px;
+    font-weight: 700;
+    width: 300px;
+    margin-bottom: 64px;
+}
+.title_service h1{
+    font-size: 60px;
+    margin-bottom: 64px;
+    font-weight: bolder;
+}
+.container_service_animes{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:144px;
+    align-items: flex-end;
+}
+.btn_service{
+    width: 240px;
+    height: 64px;
+    line-height: 64px;
+    background-color: #000;
+    position: relative;
+    border: 5px solid black;
+    cursor: pointer;
+}
+.btn_service a{
+    text-decoration: none;
+    color: white;
+    padding: 0 24px;
+    font-weight: 600;
+}
+.btn_service i{
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+.list_scroll_anime{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 55px;
+}
+.card_scroll .img_card_scroll img{
+    width: 220px;
+    height: 306px;
+}
+
+
+.card_scroll{
+    margin-right: 40px;
+}
+.card_scroll a{
+    text-decoration: none;
+}
+.card_scroll .description_anime .title_anime_news{
+    font-size: 14px;
+    width: 220px;
+    white-space: nowrap;                  
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+    text-overflow:    ellipsis;
+    color: black;
+}
+.card_scroll .description_anime .data_anime_news{
+    font-size: 12px;
+    color: #aaa;
+}
+
+
+.list_scroll_anime::-webkit-scrollbar-track
+{
+	background-color: #e7e7e7;
+}
+
+.list_scroll_anime::-webkit-scrollbar
+{
+
+	height: 5px;
+}
+
+.list_scroll_anime::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+.grid-container {
+    display: flex;
+
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 220px);
+    grid-gap: 34.7px;
+
+    width: 100%;
+  }
+  
+  .card {
+    width: 220px !important;
+    height: 306px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 4px solid black;
+    position: relative;
+    
+  }
+  .card img{
+    width: 220px !important;
+    height: 306px;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0;
+    
+  }
+  
+  .search-button {
+    background-color: #ebebeb;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-button i {
+    color: #888;
+  }
+  
+  .title_anime , .subtitle_anime{
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    bottom: 0;
+    color: white;
+
+  }
+
+  .bg-gradient{
+    position: absolute;
+    z-index: 4;
+
+    width: 220px !important;
+    height: 306px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 55%);
+  }
+
+  .container_navegacao{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+  }
+
+  .btn-navg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 3px solid black;
+    cursor: pointer;
+  }
+  .btn-navg:hover{
+    background-color: black;
+    color: white;
+  }

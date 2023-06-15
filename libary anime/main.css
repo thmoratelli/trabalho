@@ -1,0 +1,7 @@
+.btn_service:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+.btn_service:hover a {
+  color: black;
+}/*# sourceMappingURL=main.css.map */
